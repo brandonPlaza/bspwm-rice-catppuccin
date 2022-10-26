@@ -1,0 +1,10 @@
+#!/bin/bash
+
+fg=cad3f5
+ring=8aadf4
+wrong=db4b4b
+highlight=a6da95
+date=ed8796
+verify=9ece6a
+
+i3lock -n --force-clock -c 24273a -e --indicator --radius=20 --ring-width=40 --inside-color=$fg --ring-color=$ring --insidever-color=$verify --ringver-color=$verify --insidewrong-color=$wrong --ringwrong-color=$wrong --line-uses-inside --keyhl-color=$verify --separator-color=$verify --bshl-color=$verify --time-str="%H:%M" --time-size=45 --date-str="%a, %d %b" --date-size=45 --verif-text="Verifying Password..." --wrong-text="Wrong Password!" --noinput-text="" --greeter-text="Please enter your password..." --ind-pos="280:400" --time-font="JetBrains Mono Nerd Font" --date-font="JetBrains Mono Nerd Font" --verif-font="JetBrains Mono Nerd Font" --greeter-font="JetBrains Mono Nerd Font" --wrong-font="JetBrains Mono Nerd Font" --verif-size=23 --greeter-size=23 --wrong-size=23 --time-pos="450:250" --date-pos="200:250" --greeter-pos="300:580" --wrong-pos="285:620" --date-color=$date --time-color=$date --greeter-color=$fg --wrong-color=$wrong --verif-color=$verify --verif-pos="300:620" --pointer=default --refresh-rate=0 --pass-media-keys --pass-volume-keys

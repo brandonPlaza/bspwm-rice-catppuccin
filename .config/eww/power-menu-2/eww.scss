@@ -1,0 +1,50 @@
+* {
+  all: unset;
+  transition: 200ms ease-out;
+}
+
+  .powermenu2 {
+    background-color: $bg;
+    border-radius: 0px;
+  }
+
+  .shutdown {
+    background-color: $bg;
+    color: $red;
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 13px;
+    margin: 5px;
+    font-family: 'JetBrains Mono Nerd Font';
+    font-size: 28px;
+  }
+
+  .lock {
+    background-color: $bg;
+    color: $blue;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'JetBrains Mono Nerd Font';
+    font-size: 28px;
+  }
+   
+  .reboot {
+    background-color: $bg;
+    color: $green;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'JetBrains Mono Nerd Font';
+    font-size: 28px;
+  }
+
+  .exit {
+    background-color: $bg;
+    color: $yellow;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'JetBrains Mono Nerd Font';
+    font-size: 28px;
+  }

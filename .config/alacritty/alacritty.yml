@@ -1,0 +1,42 @@
+import:
+    - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+shell:
+  program: /bin/fish
+  args:
+    - --login
+
+window: 
+  padding: 
+    x: 10
+    y: 10
+  class:
+    instance: Alacritty
+    general: Alacritty
+  dimensions:
+    columns: 100
+    lines: 40
+  opacity: 0.8
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: JetBrains Mono Nerd Font
+    style: Medium
+  bold:
+    family: Jetbrains Mono Nerd Font
+    style: Bold
+  italic:
+    family: Jetbrains Mono Nerd Font
+    style: MediumItalic
+  bold_italic:
+    family: JetBrains Mono Nerd Font
+    style: BoldItalic
+  size: 8
+draw_bold_text_with_bright_colors: true
+
+cursor:
+  style: Beam
+  thickness: 0.3
+
