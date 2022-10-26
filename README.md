@@ -1,4 +1,4 @@
-# Catppuccin themed BSPWM
+# Welcome to my first properly themed BSPWM Rice!
 
 <h3>Tools used</h3>
 <ul>
