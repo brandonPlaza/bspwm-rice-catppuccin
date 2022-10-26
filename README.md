@@ -8,4 +8,5 @@
   <li> EWW for the power menu and future widget additions </li>
   <li> Rofi for the application menu, config taken from Catppuccin for now </li>
   <li> Catppuccin macchiato for the palette </li>
+  <li> Nerd Fonts for icons </li>
 </ul>
