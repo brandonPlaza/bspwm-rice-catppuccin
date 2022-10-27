@@ -1,0 +1,19 @@
+(defwidget powermenu2widget []
+  (box :class "main-buttons-box" :orientation "v" :space-evenly "false" :halign "left"
+      (button :tooltip "Shutdown your PC." :class "shutdown" :onclick "shutdown now" "Power Off 襤")
+      (button :tooltip "Reboot your PC." :class "reboot" :onclick "reboot" "Restart   ")
+      (button :tooltip "Exit BSPWM." :class "exit" :onclick "bspc quit" "Exit WM   ﴘ")
+      (button :tooltip "Lock" :class "lock" :onclick "$HOME/.scripts/lock" "Lock      ")))
+
+(defwindow powermenu2
+  :monitor 0
+  :geometry (geometry :x "-19px"
+                     :y "45px"
+                     :width "40px"
+                     :height "30px"
+                     :anchor "top right")
+  :stacking "fg"
+  :reserve (struts :distance "40px" :side "top")
+  :windowtype "normal"
+  :wm-ignore true
+  (powermenu2widget))
