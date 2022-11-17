@@ -1,5 +1,7 @@
 #! /bin/sh
 
+sleep 10 && $HOME/.config/bspwm/scripts/bspfloat floating 5 &> $HOME/.log.bspfloat.txt &
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI
@@ -11,6 +13,7 @@ bspc config bottom_padding	10
 bspc config left_padding	10
 bspc config right_padding	10
 
+bspc config external_rules_command "$HOME/.config/bspwm/scripts/external-rules"
 bspc config single_monocle	false
 bspc config gapless_monocle	true
 bspc config focus_follows_pointer true
@@ -27,5 +30,7 @@ bspc config focused_border_color "#363A4F"
 picom --experimental-backends --backend=glx -f --blur-method=gaussian --blur-size=20 --blur-deviation=15 &
 nitrogen --restore &
 eww daemon &
-polybar -r mainbar&
+polybar -r desktops&
+polybar -r timedate&
+polybar -r utility&
 $HOME/.config/conky/start.sh &
